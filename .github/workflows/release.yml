@@ -61,7 +61,7 @@ jobs:
           override: true
           target: ${{ matrix.target.target-name }}
 
-      - uses: Swatinem/rust-cache@v1
+      - uses: Swatinem/rust-cache@v2.8.0
 
       - name: Set current Python version
         shell: bash
@@ -226,7 +226,7 @@ jobs:
           pyenv install --skip-existing "$(cat .python-version)"
 
       # Caching is disabled because it interferes with artifact creation
-      #- uses: Swatinem/rust-cache@v1
+      #- uses: Swatinem/rust-cache@v2.8.0
 
       - name: Set up utilities
         shell: bash

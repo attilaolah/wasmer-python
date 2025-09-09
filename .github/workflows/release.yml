@@ -168,7 +168,7 @@ jobs:
           ls -lhaGiR target/wheels/*.whl
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: wheels-${{ matrix.python }}-${{ matrix.target.id }}
           path: target/wheels

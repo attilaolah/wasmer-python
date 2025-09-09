@@ -83,7 +83,7 @@ jobs:
 
       - name: Set up Python ${{ matrix.python }} (amd64)
         if: matrix.target.id != 'linux-aarch64'
-        uses: actions/setup-python@v6.0.0
+        uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python }}
           architecture: x64
@@ -237,7 +237,7 @@ jobs:
 
       - name: Set up Python ${{ matrix.python }} (amd64)
         if: matrix.target.id != 'linux-aarch64'
-        uses: actions/setup-python@v6.0.0
+        uses: actions/setup-python@v5
         with:
           python-version: 3.11
 

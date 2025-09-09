@@ -72,7 +72,7 @@ jobs:
           target: ${{ matrix.target.target-name }}
 
       # Caching is disabled because it interferes with artifact creation
-      # - uses: Swatinem/rust-cache@v2
+      # - uses: Swatinem/rust-cache@v2.8.0
       #   with:
       #     shared-key: "rust-cache"
 
@@ -253,7 +253,7 @@ jobs:
           pyenv install --skip-existing "$(cat .python-version)"
 
       # Caching is disabled because it interferes with artifact creation
-      #- uses: Swatinem/rust-cache@v1
+      #- uses: Swatinem/rust-cache@v2.8.0
 
       - name: Set up just
         shell: bash

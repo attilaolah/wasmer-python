@@ -14,7 +14,7 @@ jobs:
         python: ["3.7", "3.8", "3.9", "3.10", "3.11"]
         target:
           - id: 'linux-amd64'
-            os: 'ubuntu-latest'
+            os: 'ubuntu-22.04'
             target-name: 'x86_64-unknown-linux-gnu'
             rust-toolchain: 'stable'
             llvm_url: 'https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.0/clang+llvm-13.0.0-x86_64-linux-gnu-ubuntu-16.04.tar.xz'
@@ -178,7 +178,7 @@ jobs:
   release:
     name: Release
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     needs: [build]
 
